@@ -21,6 +21,7 @@ describe('digest page', () => {
     writeFileSync(join(dir, '2026-10-28.jsonl'), [
       JSON.stringify({ at: '08:00+01:00', job: 'zeta', status: 'fail', owner: null }),
       ...Array.from({ length: 3 }, (_, i) => JSON.stringify({ at: `08:0${i}+01:00`, job: 'alpha', status: 'retry', owner: 'ops' })),
+      'not json',
     ].join('\n'));
     const response = await createApp({ ...config, runsDir: dir }).request('/digest/2026-10-28');
     const html = await response.text();
@@ -29,6 +30,7 @@ describe('digest page', () => {
     expect(html).toContain('ops');
     expect(html).toContain('—');
     expect(html).toContain('class="warn"');
+    expect(html).toContain('1 unreadable line in run log');
   });
 
   it('renders an empty night and returns 404 when the night file is absent', async () => {
