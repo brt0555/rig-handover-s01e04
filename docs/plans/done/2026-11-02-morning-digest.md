@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-11-02
 ---
 
 # Morning digest
@@ -77,3 +78,17 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issues
+
+| # | Issue | Status | Closed |
+|---|-------|--------|--------|
+| 1 | [Define digest types and read night logs](https://github.com/brt0555/rig-handover-s01e04/issues/1) | closed | 2026-11-02 |
+| 2 | [Render digest page](https://github.com/brt0555/rig-handover-s01e04/issues/2) | closed | 2026-11-02 |
+| 3 | [Add digest JSON endpoint](https://github.com/brt0555/rig-handover-s01e04/issues/3) | closed | 2026-11-02 |
+| 4 | [Link nightly digests from status board](https://github.com/brt0555/rig-handover-s01e04/issues/4) | closed | 2026-11-02 |
+| 5 | [Test digest routes](https://github.com/brt0555/rig-handover-s01e04/issues/5) | closed | 2026-11-02 |
+| 6 | [Publish review preview](https://github.com/brt0555/rig-handover-s01e04/issues/6) | closed | 2026-11-02 |
+| 7 | [Remove lane marker and archive plan](https://github.com/brt0555/rig-handover-s01e04/issues/7) | closed | 2026-11-02 |
+
+Preview: https://brt0555.github.io/rig-handover-s01e04/ (marker removed after review).
